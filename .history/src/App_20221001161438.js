@@ -7,7 +7,7 @@ const App = () => {
     return (
       <div className="container">
         <div className="row"><h1>hello bao  thi ne</h1></div>
-      </div>)
+      </div>
   }
   const x = 10;
   return (
@@ -18,7 +18,6 @@ const App = () => {
           Edit <code>src/App.js</code> tu hoc reactjs ne.
         </p>
         {x > 5 && thi()}
-        {x}
         <a
           className="App-link"
           href="https://reactjs.org"

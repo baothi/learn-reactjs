@@ -1,24 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
-// function App() {
-const App = () => {
-  const thi = () => {
-    return (
-      <div className="container">
-        <div className="row"><h1>hello bao  thi ne</h1></div>
-      </div>)
-  }
-  const x = 10;
+function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> tu hoc reactjs ne.
+          Edit <code>src/App.js</code> and save to reload.
         </p>
-        {x > 5 && thi()}
-        {x}
         <a
           className="App-link"
           href="https://reactjs.org"

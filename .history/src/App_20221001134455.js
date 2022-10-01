@@ -1,15 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-// function App() {
-const App = () => {
-  const thi = () => {
-    return (
-      <div className="container">
-        <div className="row"><h1>hello bao  thi ne</h1></div>
-      </div>)
-  }
-  const x = 10;
+function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -17,8 +9,6 @@ const App = () => {
         <p>
           Edit <code>src/App.js</code> tu hoc reactjs ne.
         </p>
-        {x > 5 && thi()}
-        {x}
         <a
           className="App-link"
           href="https://reactjs.org"

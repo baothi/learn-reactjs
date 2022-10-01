@@ -18,7 +18,6 @@ const App = () => {
           Edit <code>src/App.js</code> tu hoc reactjs ne.
         </p>
         {x > 5 && thi()}
-        {x}
         <a
           className="App-link"
           href="https://reactjs.org"
