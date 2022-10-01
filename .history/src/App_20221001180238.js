@@ -7,7 +7,7 @@ const App = () => {
   const x = [1, 2, 3, 4, { name: 'John', age: 36 }]
   // const x = { name: 'John', age: 36 }
   return (
-    <div className="App" style={{ border: '1px solid red', textTransform: 'uppercase' }}>
+    <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

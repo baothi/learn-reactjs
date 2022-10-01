@@ -4,17 +4,22 @@ import TodoList from './componets/TodoList';
 
 // function App() {
 const App = () => {
-  const x = [1, 2, 3, 4, { name: 'John', age: 36 }]
-  // const x = { name: 'John', age: 36 }
+  const thi = () => {
+    return (
+      <div className="container">
+        <div className="row"><h1>hello bao  thi ne</h1></div>
+      </div>)
+  }
+  const x = 10;
   return (
-    <div className="App" style={{ border: '1px solid red', textTransform: 'uppercase' }}>
+    <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> {JSON.stringify(x)}.
-          {console.log(x)}
+          Edit <code>src/App.js</code> tu hoc reactjs ne.
         </p>
-        <TodoList />
+        {x > 5 && thi()}
+        {x}
         <a
           className="App-link"
           href="https://reactjs.org"
