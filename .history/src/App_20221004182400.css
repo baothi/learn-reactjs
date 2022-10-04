@@ -46,7 +46,7 @@
 .content-left {
   width: 50%;
   padding: 10px;
-
+  border-right: 1px solid grey;
 }
 
 .content-right {
@@ -71,8 +71,4 @@
   border: none;
   /* background-color: white;
   color: black; */
-}
-
-button {
-  cursor: pointer;
 }

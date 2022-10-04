@@ -29,7 +29,7 @@ const App = () => {
         </a>
       </header>
       <div className='content-right'>
-        <AddNewProduct />
+        content-right
       </div>
     </div>
   );

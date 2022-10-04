@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './componets/Home';
-import AddNewProduct from './componets/AddNewProduct';
 
 // function App() {
 const App = () => {
@@ -9,8 +8,8 @@ const App = () => {
   const x = "tu hoc reactjs nhe"
   return (
     <div className="App" /*style={{ border: '1px solid red', textTransform: 'uppercase'}}*/ >
-      <header className="App-header content-left">
-        <div style={{ textAlign: "center" }}>
+      <header className="App-header">
+        <div>
           <img src={logo} className="App-logo" alt="logo" />
         </div>
 
@@ -28,9 +27,6 @@ const App = () => {
           Learn React
         </a>
       </header>
-      <div className='content-right'>
-        <AddNewProduct />
-      </div>
     </div>
   );
 }

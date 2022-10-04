@@ -46,33 +46,11 @@
 .content-left {
   width: 50%;
   padding: 10px;
-
+  border: 1px solid;
 }
 
 .content-right {
   width: 50%;
   padding: 10px;
-  color: white;
-}
-
-.input-product {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  margin-bottom: 10px;
-}
-
-.input-product input {
-  width: 40%;
-  height: 24px;
-  outline: none;
-  border-radius: 3px;
-  border: none;
-  /* background-color: white;
-  color: black; */
-}
-
-button {
-  cursor: pointer;
+  border: 1px solid;
 }

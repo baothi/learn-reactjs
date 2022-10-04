@@ -1,13 +1,30 @@
 import React, { useState } from 'react';
 
 const TodoList = () => {
-    const [name, setName] = useState("Bao Thi tu hoc lap trinh")
+    const [name, setName] = useState("")
+    // const hankdleClickBtn = (event, mgs) => {
+    //     console.log(" >> run Hankdle Click ", event.target, " -> ", mgs)
+    // }
+    const [ListTodo, setListTodo] = useState([
+        { id: 'todo1', name: 'Whatchanging youtube' },
+        { id: 'todo2', name: 'Using youtube' },
+        { id: 'todo3', name: 'Reading book' }
+    ])
+    console.log(">> run ListTodo ", ListTodo)
     return (
         <div className="container">
             <div className="row">
 
                 <label>Your Name   </label>
-                <input value={name} type="text" onChange={(event) => setName(event.target.value)} />
+                <input value={name} type="text"
+                    onChange={(event) => {
+                        // console.log("event.target : ", event)
+                        setName(event.target.value)
+                    }
+                    } />
+                <button type="button" onClick={() => {
+                    hankdleClickBtn("event", 'buttonClick')
+                }}>Submit</button>
                 <br /><br />
                 helo Todo list with name = {name}
             </div>

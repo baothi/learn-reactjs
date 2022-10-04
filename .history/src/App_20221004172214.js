@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './componets/Home';
-import AddNewProduct from './componets/AddNewProduct';
 
 // function App() {
 const App = () => {
@@ -29,7 +28,7 @@ const App = () => {
         </a>
       </header>
       <div className='content-right'>
-        <AddNewProduct />
+        content-right
       </div>
     </div>
   );
