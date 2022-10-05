@@ -28,10 +28,6 @@ const AddNewProduct = () => {
             localStorage.setItem('productList', JSON.stringify([object]));
         }
         // console.log('>>> check productList parse', JSON.parse(productList));
-        setName("");
-        setPrice(0);
-        setSize(0);
-        setColor("");
     }
 
     const handleHideShow = () => {
@@ -87,10 +83,6 @@ const AddNewProduct = () => {
             {
                 isShowDetail === true ? <div onClick={() => { handleHideShow() }}>Hide this form</div> : <div onClick={() => { handleHideShow() }}>Show the form</div>
             }
-            <div>
-                List Product
-                <div>{localStorage.getItem("productList")}</div>
-            </div>
         </div>
     )
 }

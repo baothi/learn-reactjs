@@ -87,10 +87,6 @@ const AddNewProduct = () => {
             {
                 isShowDetail === true ? <div onClick={() => { handleHideShow() }}>Hide this form</div> : <div onClick={() => { handleHideShow() }}>Show the form</div>
             }
-            <div>
-                List Product
-                <div>{localStorage.getItem("productList")}</div>
-            </div>
         </div>
     )
 }

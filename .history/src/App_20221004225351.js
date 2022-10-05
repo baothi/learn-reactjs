@@ -7,7 +7,6 @@ import AddNewProduct from './componets/AddNewProduct';
 // function App() {
 const App = () => {
   // const x = [1, 2, 3, 4, { name: 'John', age: 36 }] ==> {JSON.stringify(x)}
-  // npm install --save-exact sass@1.45.0
   const x = "tu hoc reactjs nhe"
   return (
     <div className="App" /*style={{ border: '1px solid red', textTransform: 'uppercase'}}*/ >

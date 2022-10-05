@@ -21,17 +21,14 @@ const AddNewProduct = () => {
         // localStorage.setItem('productList', JSON.stringify(object));
         let productList = localStorage.getItem('productList');
         if (productList) {
-            let arr = JSON.parse(productList);
-            arr.push(object);
-            localStorage.setItem('productList', JSON.stringify(arr));
+            let arr1 = JSON.parse(productList);
+            console.log('>>> check productList parse', arr1);
+            arr1.push(object);
+            localStorage.setItem('productList', JSON.stringify(object));
         } else {
-            localStorage.setItem('productList', JSON.stringify([object]));
+            localStorage.setItem('productList', JSON.stringify(object));
         }
         // console.log('>>> check productList parse', JSON.parse(productList));
-        setName("");
-        setPrice(0);
-        setSize(0);
-        setColor("");
     }
 
     const handleHideShow = () => {
@@ -45,10 +42,10 @@ const AddNewProduct = () => {
         // setIsShowDetail(curentStatus)
     }
 
-    // localStorage.setItem('name', "bao thi");
-    // localStorage.setItem('channel', "hoc lạp trinh");
-    // const name1 = localStorage.getItem('name');
-    // console.log(">>> check name = : ", name1);
+    localStorage.setItem('name', "bao thi");
+    localStorage.setItem('channel', "hoc lạp trinh");
+    const name1 = localStorage.getItem('name');
+    console.log(">>> check name = : ", name1);
 
 
     return (
@@ -87,10 +84,6 @@ const AddNewProduct = () => {
             {
                 isShowDetail === true ? <div onClick={() => { handleHideShow() }}>Hide this form</div> : <div onClick={() => { handleHideShow() }}>Show the form</div>
             }
-            <div>
-                List Product
-                <div>{localStorage.getItem("productList")}</div>
-            </div>
         </div>
     )
 }

@@ -8,30 +8,19 @@ const AddNewProduct = () => {
     const [isShowDetail, setIsShowDetail] = useState(true)
 
     const handleClickBtn = () => {
-        // let object = {
-        //     name, price, size, color
-        // }
         let object = {
-            name1: name,
-            price: price,
-            size: size,
-            color: color
+            name, price, size, color
         }
-        // console.log(" >> run Hankdle Click ", object, JSON.stringify(object))
-        // localStorage.setItem('productList', JSON.stringify(object));
+        // let object = {
+        //     name1: name , 
+        //     price1: price,
+        //     size1: size,
+        //     color1: color
+        // }
+        console.log(" >> run Hankdle Click ", object, JSON.stringify(object))
+        localStorage.setItem('productList', JSON.stringify(object));
         let productList = localStorage.getItem('productList');
-        if (productList) {
-            let arr = JSON.parse(productList);
-            arr.push(object);
-            localStorage.setItem('productList', JSON.stringify(arr));
-        } else {
-            localStorage.setItem('productList', JSON.stringify([object]));
-        }
-        // console.log('>>> check productList parse', JSON.parse(productList));
-        setName("");
-        setPrice(0);
-        setSize(0);
-        setColor("");
+        console.log('>>> check productList', productList);
     }
 
     const handleHideShow = () => {
@@ -45,10 +34,10 @@ const AddNewProduct = () => {
         // setIsShowDetail(curentStatus)
     }
 
-    // localStorage.setItem('name', "bao thi");
-    // localStorage.setItem('channel', "hoc lạp trinh");
-    // const name1 = localStorage.getItem('name');
-    // console.log(">>> check name = : ", name1);
+    localStorage.setItem('name', "bao thi");
+    localStorage.setItem('channel', "hoc lạp trinh");
+    const name1 = localStorage.getItem('name');
+    console.log(">>> check name = : ", name1);
 
 
     return (
@@ -87,10 +76,6 @@ const AddNewProduct = () => {
             {
                 isShowDetail === true ? <div onClick={() => { handleHideShow() }}>Hide this form</div> : <div onClick={() => { handleHideShow() }}>Show the form</div>
             }
-            <div>
-                List Product
-                <div>{localStorage.getItem("productList")}</div>
-            </div>
         </div>
     )
 }
