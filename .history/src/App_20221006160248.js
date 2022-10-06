@@ -59,7 +59,7 @@ const App = () => {
           <div>I am bao</div>
         </Route>
         <Route path="*">
-          <div>404 not found</div>
+          <NoMatch />
         </Route>
       </Switch>
 

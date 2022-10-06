@@ -58,9 +58,7 @@ const App = () => {
         <Route path="/about">
           <div>I am bao</div>
         </Route>
-        <Route path="*">
-          <div>404 not found</div>
-        </Route>
+
       </Switch>
 
 

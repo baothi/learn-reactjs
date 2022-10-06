@@ -22,7 +22,13 @@ const App = () => {
     <Router>
       <Nav />
       <Switch>
-        <Route path="/" exact >
+        <Route path="/product">
+          <Product />
+        </Route>
+        <Route path="/weather">
+          <div>weather app</div>
+        </Route>
+        <Route path="/">
           <div className="App" /*style={{ border: '1px solid red', textTransform: 'uppercase'}}*/ >
             <header className="App-header content-left">
               <div style={{ textAlign: "center" }}>
@@ -48,18 +54,6 @@ const App = () => {
               <Product />
             </div>
           </div>
-        </Route>
-        <Route path="/product">
-          <Product />
-        </Route>
-        <Route path="/weather">
-          <div>weather app</div>
-        </Route>
-        <Route path="/about">
-          <div>I am bao</div>
-        </Route>
-        <Route path="*">
-          <div>404 not found</div>
         </Route>
       </Switch>
 
