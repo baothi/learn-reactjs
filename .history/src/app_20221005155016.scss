@@ -7,16 +7,16 @@
     display: flex;
 
     .content-left {
-        width: 20%;
+        width: 50%;
         padding: 10px;
 
     }
 
     .content-right {
-        width: 80%;
+        width: 50%;
         padding: 10px;
         color: white;
-       
+        border: 1px solid red;
     }
 }
 
@@ -40,12 +40,6 @@
     /* justify-content: center; */
     font-size: calc(10px + 2vmin);
     color: white;
-
-    span {
-        color: red;
-        font-size: 18px;
-
-    }
 }
 
 .App-link {
@@ -82,4 +76,10 @@
 
 button {
     cursor: pointer;
+}
+
+span {
+    color: red;
+    font-size: 18px;
+
 }
